@@ -197,9 +197,16 @@ else document.addEventListener('DOMContentLoaded', init, false);
 	</script>
 </head>
 <body>
-	<audio id="bg-music" autoplay loop>
-            <source src="苏泽 - 心墙 (DJ版_Explicit).mp3" type="audio/mp3">
-        </audio>
+	<audio id="bg-music">
+        <source src="苏泽 - 心墙 (DJ版_Explicit).mp3" type="audio/mp3">
+    </audio>
+    
+    <script>
+    window.addEventListener('load', function() {
+        var audio = document.getElementById("bg-music");
+        audio.play();
+    });
+    </script>
 	<canvas id="heart"></canvas>
 	<div id="app">
 		<div id="title">
